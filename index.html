@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/324d3bd86f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/icon.jpg">
+</head>
+<body>
+    <div class="intro-container">
+        <h1>ChatGPT Clone</h1>
+        <div class="infos">
+            <div class="examples">
+              <div class="title">
+                    <img id="example-img" class="img1" src="./images/icons8-brightness-24.png">
+                    <span>Examples</span>
+                </div>
+                <div class="def">
+                    <p id="predefinedQns">"Explain quantum computing in simple terms?"<span><img src="./images/icons8-arrow-50.png" alt="search"></span></p>
+                    <p id="predefinedQns">"Got any creative ideas for a 10 year old's birthday?"<span><img src="./images/icons8-arrow-50.png" alt="search"></span></p>
+                    <p id="predefinedQns">"How do I make an HTTP request in Javascript?"<span><img src="./images/icons8-arrow-50.png" alt="search"></span></p>
+                </div>
+            </div>
+
+            <div class="capabilities">
+                <div class="title">
+                    <img id="capability-img" class="img1" src="./images/icons8-lightning-50.png">
+                    <span>Capabilities</span>
+                </div>
+                <div class="def">
+                    <p>Remember what user said earlier in the conversation</p>
+                    <p>Allows user to provide follow-up corrections</p>
+                    <p>Trained to decline inappropriate requests</p>
+                </div>
+            </div>
+
+            <div class="limitations">
+                <div class="title">
+                    <img id="limitation-img" class="img1" src="./images/icons8-warning-50.png">
+                    <span>Limitations</span>
+                </div>
+                <div class="def">
+                    <p>May occassionally generate incorrect information</p>
+                    <p>May occassionally produce harmful instructions or biased content</p>
+                    <p>Limited knowledge of world and events after 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        
+    </div>
+
+    <div class="typing-container">
+        <div class="typing-content">
+            <div class="typing-textarea">
+                <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
+                <span id="send-btn"><i class="fa-regular fa-paper-plane"></i></span>
+            </div>
+            <div class="typing-controls">
+                <span id="theme-btn"><i class="fa-regular fa-sun"></i></span>
+                <span id="delete-btn"><i class="fa-solid fa-trash-can"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
